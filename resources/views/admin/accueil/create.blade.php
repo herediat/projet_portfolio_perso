@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+<a href="{{route('dashboard')}}">Vers Dashboard</a>
     <!-- component -->
 <div class="animate-pulse min-h-screen bg-slate-200 py-6 flex flex-col justify-center relative overflow-hidden sm:py-12">
     <span class="border text-4xl text-yellow-800 px-6 pt-10 pb-8 bg-white w-1/2 max-w-md mx-auto rounded-t-md sm:px-10">Sign in Form</span>

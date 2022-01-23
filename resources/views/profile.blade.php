@@ -30,7 +30,7 @@
                      <a href="#contact" class="nav-link smoothScroll">Contact</a>
                  </li>
                  <li class="nav-item">
-                    <a href="#dashboard" class="nav-link smoothScroll">Dashboard</a>
+                    <a href="{{route('dashboard')}}" class="nav-link smoothScroll">Dashboard</a>
                 </li>
              </ul>
  

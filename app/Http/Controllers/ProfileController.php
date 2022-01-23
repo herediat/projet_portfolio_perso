@@ -15,8 +15,8 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $profile = Profile::all();
-       return view('admin.accueil.main', compact('profile'));
+        $profiles = Profile::all();
+       return view('admin.accueil.main', compact('profiles'));
     }
 
     /**
@@ -42,7 +42,7 @@ class ProfileController extends Controller
         $profile = new Profile();
         $profile -> description = $request->description;
         $profile -> save();
-        return Redirect()->route('profile');
+        return Redirect()->route('accueil');
     }
 
     /**
@@ -51,9 +51,9 @@ class ProfileController extends Controller
      * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function show(Profile $profile)
+    public function show(Profile $id)
     {
-        return view('admin..show');
+        return view('show', compact('id'));
         
     }
 
@@ -63,9 +63,10 @@ class ProfileController extends Controller
      * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function edit(Profile $profile)
+    public function edit(Profile $id)
     {
-        return view('profile.edit');
+        $profile = $id;
+        return view('admin.accueil.edit', compact('profile'));
         
     }
 
@@ -76,9 +77,13 @@ class ProfileController extends Controller
      * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Profile $profile)
+    public function update(Request $request, Profile $id)
     {
-        //
+        $profile = $id;
+        $profile->description = $request->description;
+        $profile->save();
+        return redirect()->route('accueil.index');
+        return redirect('accueil.index' . $profile->id);
     }
 
     /**

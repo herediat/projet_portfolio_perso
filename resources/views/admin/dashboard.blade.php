@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
+<a href="{{route('accueil.main')}}">Vers accueil main</a>
+<br>
+<br>
+<a href="{{route('accueil.create')}}">Vers create</a>
     <!-- component -->
 <div class="min-h-screen flex">
     <div class="py-12 px-10 w-1/4">

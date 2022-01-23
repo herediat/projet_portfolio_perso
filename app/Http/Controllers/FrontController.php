@@ -31,10 +31,10 @@ class FrontController extends Controller
     //     return view('contact');
     // }
 
-    // public function dashboard()
-    // {
-    //     return view('admin.dashboard');
-    // }
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
 
     
 }

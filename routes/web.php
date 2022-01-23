@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ProfileController;
+use GuzzleHttp\Promise\Create;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,15 +27,22 @@ Route::get('/admin/dashboard', [FrontController::class, 'dashboard'])->name('das
 
 
 //BACK
+Route::get('/admin/dashboard/accueil/main', [ProfileController::class, 'index'])->name('accueil.main');
+// //CRUD CREAT ACCUIEL ('CREATE')
+Route::get('/admin/dashboard/accueil/create', [ProfileController::class, 'create'])->name('accueil.create');
+// //CRUD CREAT ACCUIEL ('STORE')
+// Route::get('/admin/dashboard/accueil/store', [ProfileController::class, 'store'])->name('accueil.store');
 
-//CRUD CREAT ACCUIEL ('CREATE')
-//CRUD CREAT ACCUIEL ('STORE')
+// //CRUD DELETE
+// Route::delete('/admin/dashboard/accueil/{id}/delete', [ProfileController::class, 'destroy'])->name('accueil.destroy');
 
-//CRUD DELETE
+// //CRUD EDIT
+// Route::get('/admin/dashboard/accueil/{id}/delete', [ProfileController::class, 'destroy'])->name('accueil.destroy');
+// Route::put('/admin/accueil/{id}/update', [ProfileController::class, 'update'])->name('accueil.update');
 
-//CRUD EDIT
 
-//CRUD SHOW
+// //CRUD SHOW
+// Route::get('/admin/dashboard/accueil/{id}/show', [ProfileController::class, 'show'])->name('accueil.show');
 
 
 
