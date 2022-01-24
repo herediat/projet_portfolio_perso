@@ -34,7 +34,7 @@ Route::get('/admin/dashboard/accueil/create', [ProfileController::class, 'create
 Route::post('/admin/dashboard/accueil/store', [ProfileController::class, 'store'])->name('accueil.store');
 
 // //CRUD DELETE
-// Route::delete('/admin/dashboard/accueil/{id}/delete', [ProfileController::class, 'destroy'])->name('accueil.destroy');
+Route::delete('/admin/dashboard/accueil/{id}/delete', [ProfileController::class, 'destroy'])->name('accueil.destroy');
 
 // //CRUD EDIT
 // Route::get('/admin/dashboard/accueil/{id}/delete', [ProfileController::class, 'destroy'])->name('accueil.destroy');
