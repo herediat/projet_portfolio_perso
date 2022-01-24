@@ -31,7 +31,7 @@ Route::get('/admin/dashboard/accueil/main', [ProfileController::class, 'index'])
 // //CRUD CREAT ACCUIEL ('CREATE')
 Route::get('/admin/dashboard/accueil/create', [ProfileController::class, 'create'])->name('accueil.create');
 // //CRUD CREAT ACCUIEL ('STORE')
-// Route::get('/admin/dashboard/accueil/store', [ProfileController::class, 'store'])->name('accueil.store');
+Route::post('/admin/dashboard/accueil/store', [ProfileController::class, 'store'])->name('accueil.store');
 
 // //CRUD DELETE
 // Route::delete('/admin/dashboard/accueil/{id}/delete', [ProfileController::class, 'destroy'])->name('accueil.destroy');

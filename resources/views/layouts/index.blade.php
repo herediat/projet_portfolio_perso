@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{asset("css/aos.css")}}">
 
     <!-- MAIN CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
 </head>
 <body>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<a href="{{route('create')}}">Vers create</a>
+<a href="{{route('accueil.create')}}">Vers create</a>
 <a href="{{route('dashboard')}}">Vers dashboard</a>
 
     <!-- component -->

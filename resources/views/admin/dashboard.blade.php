@@ -5,7 +5,14 @@
 <a href="{{route('accueil.main')}}">Vers accueil main</a>
 <br>
 <br>
+
 <a href="{{route('accueil.create')}}">Vers create</a>
+<br>
+<br>
+
+<a href="{{route('home')}}"> Vers Home</a>
+
+
     <!-- component -->
 <div class="min-h-screen flex">
     <div class="py-12 px-10 w-1/4">
@@ -198,12 +205,9 @@
                   </td>
   
                   <td class="px-16 py-2">
-                    <span class="text-green-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h5" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <path d="M5 12l5 5l10 -10" />
-                      </svg>
-                    </span>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-yellow-500 text-yellow-500 text-lg rounded-lg hover:bg-yellow-500 hover:text-gray-100 focus:border-4 focus:border-yellow-300"> Éditer</button>
+                    <a href="{{route('accueil.create')}}"><button class="p-2 pl-5 pr-5 bg-transparent border-2 border-green-500 text-green-500 text-lg rounded-lg hover:bg-green-500 hover:text-gray-100 focus:border-4 focus:border-green-300">Créer</button></a>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-red-500 text-red-500 text-lg rounded-lg hover:bg-red-500 hover:text-gray-100 focus:border-4 focus:border-red-300">Supprimer</button>
                   </td>
                 </tr>
                 <tr class="bg-white border-4 border-gray-200 text-center">
@@ -222,13 +226,9 @@
                   </td>
   
                   <td class="px-16 py-2">
-                    <span class="text-yellow-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <circle cx="12" cy="12" r="9" />
-                        <polyline points="12 7 12 12 15 15" />
-                      </svg>
-                    </span>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-yellow-500 text-yellow-500 text-lg rounded-lg hover:bg-yellow-500 hover:text-gray-100 focus:border-4 focus:border-yellow-300">Éditer</button>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-green-500 text-green-500 text-lg rounded-lg hover:bg-green-500 hover:text-gray-100 focus:border-4 focus:border-green-300">Créer</button>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-red-500 text-red-500 text-lg rounded-lg hover:bg-red-500 hover:text-gray-100 focus:border-4 focus:border-red-300">Supprimer</button>
                   </td>
                 </tr>
                 <tr class="bg-white border-4 border-gray-200 text-center">
@@ -247,13 +247,9 @@
                   </td>
   
                   <td class="px-16 py-2">
-                    <span class="text-yellow-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <line x1="18" y1="6" x2="6" y2="18" />
-                        <line x1="6" y1="6" x2="18" y2="18" />
-                      </svg>
-                    </span>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-yellow-500 text-yellow-500 text-lg rounded-lg hover:bg-yellow-500 hover:text-gray-100 focus:border-4 focus:border-yellow-300">Éditer</button>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-green-500 text-green-500 text-lg rounded-lg hover:bg-green-500 hover:text-gray-100 focus:border-4 focus:border-green-300">Créer</button>
+                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-red-500 text-red-500 text-lg rounded-lg hover:bg-red-500 hover:text-gray-100 focus:border-4 focus:border-red-300">Supprimer</button>
                   </td>
                 </tr>
               </tbody>
